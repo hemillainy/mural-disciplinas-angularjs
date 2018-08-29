@@ -1,15 +1,20 @@
-<div>
-    <div ng-controller="disciplinasCtrl" ng-repeat="disciplina in disciplinas">
-        <div class="card">
-            <div class="card-header">
-                {{disciplina.name}}
-            </div>
-            <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                </blockquote>
-            </div>
-        </div>
-    </div>
+<div id="mural" ng-controller="disciplinasCtrl">
+    <table class="table table-sm container">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="disciplina in disciplinas">
+                <th scope="row">{{disciplina.period}}</th>
+                <td>{{disciplina.name}}</td>
+                <td>{{disciplina.type}}</td>
+                <td>{{disciplina.gridType}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>

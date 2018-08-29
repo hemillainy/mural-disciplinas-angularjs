@@ -1,0 +1,17 @@
+div.card {
+    width: 300;
+    height: 260;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+div.card-header {
+    text-size-adjust: 10;
+}
+
+table.table {
+    align-self: center;
+    width: 700px;
+}
