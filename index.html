@@ -15,6 +15,8 @@
     <script src="node_modules/angular-lock/dist/angular-lock.js"></script>
     <script src="node_modules/angular-jwt/dist/angular-jwt.js"></script>
     <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="app/js/controller/msgsCtrl.js"></script>
+    <script src="app/js/services/msgsService.js"></script>
     <title>Mural</title>
 </head>
 
@@ -34,6 +36,7 @@
 
     <br><br><br><br>
     <ng-view></ng-view>
+    <div ng-include="'/app/views/mural.html'"></div>
 </body>
 
 </html>
