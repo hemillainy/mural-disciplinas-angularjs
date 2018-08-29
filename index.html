@@ -14,6 +14,7 @@
     <script type="text/javascript" src="https://cdn.auth0.com/js/lock/11.6.1/lock.min.js"></script>
     <script src="node_modules/angular-lock/dist/angular-lock.js"></script>
     <script src="node_modules/angular-jwt/dist/angular-jwt.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
     <title>Mural</title>
 </head>
 
@@ -21,10 +22,10 @@
     <br><br><br>
     <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link active" href="#">Mensagens</a>
+            <a class="nav-link active" href="/#!/">Mensagens</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Enviar Mensagem</a>
+            <a class="nav-link" href="/#!/enviar-msg">Enviar Mensagem</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">Buscar</a>
@@ -32,7 +33,7 @@
     </ul>
 
     <br><br><br><br>
-    <div ng-include="'/app/views/envio-msg.html'"></div>
+    <ng-view></ng-view>
 </body>
 
 </html>

@@ -6,3 +6,7 @@ div#envio-msg {
 h4 {
     text-align: center;
 }
+
+button {
+    float: right;
+}
