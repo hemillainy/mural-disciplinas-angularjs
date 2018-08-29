@@ -1,7 +1,6 @@
-angular.module("mural").controller("msgsCtrl", function ($scope, msgsAPI) {
-    msgsAPI.getMsgs()
+angular.module("mural").controller("disciplinasCtrl", function ($scope, disciplinasAPI) {
+    disciplinasAPI.getDisciplinas()
         .then(disciplinas => {
-            console.log(disciplinas.data)
             $scope.disciplinas = disciplinas.data;
         })
 });

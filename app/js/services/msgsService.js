@@ -1,8 +1,8 @@
-angular.module("mural").factory("msgsAPI", function ($http) {
-    var _getMsgs = function () {
+angular.module("mural").factory("disciplinasAPI", function ($http) {
+    var _getDisciplinas = function () {
         return $http.get("https://api-sistema-pre-matricula.herokuapp.com/api/curricularComponent");
     };
     return {
-        getMsgs: _getMsgs
+        getDisciplinas: _getDisciplinas
     };
 })
