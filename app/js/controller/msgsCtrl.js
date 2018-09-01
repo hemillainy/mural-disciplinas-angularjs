@@ -12,6 +12,10 @@ angular.module("mural").controller("disciplinasCtrl", function ($scope, discipli
         })
     
     $scope.setListagem = function (periodo) {
-        $scope.disciplinas = disc.filter(a => a.period === periodo)
+        if (periodo > 0) {
+            $scope.disciplinas = disc.filter(a => a.period === periodo)
+        } else {
+            $scope.disciplinas = disc;
+        }
     }
 });
