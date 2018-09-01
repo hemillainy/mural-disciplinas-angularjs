@@ -16,6 +16,6 @@ table.table {
     width: 700px;
 }
 
-h6 {
+h6, .dropdown {
     float: left;
 }
