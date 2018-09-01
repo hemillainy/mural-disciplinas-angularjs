@@ -1,38 +1,49 @@
-<div id="mural" ng-controller="disciplinasCtrl">
-    <div class="container">
-        <h6>Exibir:</h6>
+<div ng-controller="disciplinasCtrl">
+    <div id="mural" class="container">
+        <div id="opcoes">
+            <h6>Exibir: &nbsp;</h6>
 
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                Dropdown button
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown">
+                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Todos os períodos
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button" ng-click="setListagem(1)">1º período</button>
+                    <button class="dropdown-item" type="button" ng-click="setListagem(2)">2º período</button>
+                    <button class="dropdown-item" type="button" ng-click="setListagem(3)">3º período</button>
+                    <button class="dropdown-item" type="button" ng-click="setListagem(4)">4º período</button>
+                    <button class="dropdown-item" type="button" ng-click="setListagem(5)">5º período</button>
+                    <button class="dropdown-item" type="button" ng-click="setListagem(6)">6º período</button>
+                    <button class="dropdown-item" type="button" ng-click="setListagem(7)">7º período</button>
+                    <button class="dropdown-item" type="button" ng-click="setListagem(8)">8º período</button>
+                    <button class="dropdown-item" type="button" ng-click="setListagem(9)">9º período</button>
+                </div>
             </div>
         </div>
 
 
         <br><br>
-        <table class="table table-sm">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nome</th>
-                    <th scope="col">Tipo</th>
-                    <th scope="col">Grade</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="disciplina in disciplinas">
-                    <th scope="row">{{disciplina.period}}</th>
-                    <td>{{disciplina.name}}</td>
-                    <td>{{disciplina.type}}</td>
-                    <td>{{disciplina.gridType}}</td>
-                </tr>
-            </tbody>
-        </table>
+        <div id="tabela">
+            <table class="table table-sm">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="disciplina in disciplinas">
+                        <th scope="row">{{disciplina.period}}</th>
+                        <td>{{disciplina.name}}</td>
+                        <td>{{disciplina.type}}</td>
+                        <td>{{disciplina.gridType}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
     </div>
 </div>
