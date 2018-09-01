@@ -15,3 +15,7 @@ table.table {
     align-self: center;
     width: 700px;
 }
+
+h6 {
+    float: left;
+}

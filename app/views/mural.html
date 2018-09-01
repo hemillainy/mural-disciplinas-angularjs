@@ -1,20 +1,24 @@
 <div id="mural" ng-controller="disciplinasCtrl">
-    <table class="table table-sm container">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Nome</th>
-                <th scope="col">Tipo</th>
-                <th scope="col">Grade</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr ng-repeat="disciplina in disciplinas">
-                <th scope="row">{{disciplina.period}}</th>
-                <td>{{disciplina.name}}</td>
-                <td>{{disciplina.type}}</td>
-                <td>{{disciplina.gridType}}</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <h6>Exibir:</h6>
+
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="disciplina in disciplinas">
+                    <th scope="row">{{disciplina.period}}</th>
+                    <td>{{disciplina.name}}</td>
+                    <td>{{disciplina.type}}</td>
+                    <td>{{disciplina.gridType}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
